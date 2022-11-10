@@ -1,5 +1,5 @@
 from dotenv import dotenv_values
 
-config = dotenv_values(".env")
+env = dotenv_values(".env")
 
-PATH = config.get('PATH')
+PATH = env.get('PATH')
