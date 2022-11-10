@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "learn-selenium"
+version = "0.1.0"
+description = ""
+authors = ["Beknazar Abdyldaev <abdyldaev.duff@gmail.com>"]
+readme = "README.md"
+packages = [{include = "learn_selenium"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.6.0"
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
