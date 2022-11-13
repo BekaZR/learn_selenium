@@ -10,6 +10,7 @@ packages = [{include = "learn_selenium"}]
 python = "^3.10"
 selenium = "^4.6.0"
 python-dotenv = "^0.21.0"
+fake-useragent = "^0.1.14"
 
 
 [build-system]

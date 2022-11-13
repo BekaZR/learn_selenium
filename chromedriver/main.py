@@ -4,11 +4,16 @@ from selenium import webdriver
 
 from core.settings import PATH
 
+from fake_useragent import UserAgent
+
+
+useragent = UserAgent() 
+
 url = "https://www.whatismybrowser.com/detect/what-is-my-user-agent/"
 
 options = webdriver.ChromeOptions()
 
-options.add_argument("user-agent=Helloworld:)")
+options.add_argument(f"user-agent={useragent.ie}")
 
 driver = webdriver.Chrome(executable_path=PATH, options=options)
 
