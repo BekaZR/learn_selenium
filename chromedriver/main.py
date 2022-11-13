@@ -12,8 +12,10 @@ def chrome():
     try:
         driver.get(url)
         sleep(5)
-        driver.get("https://pypi.org/project/python-dotenv/")
+        driver.get_screenshot_as_file("1.png")
+        driver.save_screenshot('2.png')
         sleep(5)
+        
     except Exception as e:
         print(e)
     finally:
