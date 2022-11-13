@@ -12,12 +12,12 @@ options.add_argument("user-agent=Helloworld:)")
 
 driver = webdriver.Chrome(executable_path=PATH, options=options)
 
+
 def chrome():
     try:
         driver.get(url)
-        sleep(5)
-        driver.get_screenshot_as_file("1.png")
-        driver.save_screenshot('2.png')
+        driver.get_screenshot_as_file("./media/1.png")
+        driver.save_screenshot('./media/2.png')
         sleep(5)
         
     except Exception as e:
