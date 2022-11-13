@@ -4,9 +4,13 @@ from selenium import webdriver
 
 from core.settings import PATH
 
-url = "https://www.instagram.com/"
+url = "https://www.whatismybrowser.com/detect/what-is-my-user-agent/"
 
-driver = webdriver.Chrome(executable_path=PATH)
+options = webdriver.ChromeOptions()
+
+options.add_argument("user-agent=Helloworld:)")
+
+driver = webdriver.Chrome(executable_path=PATH, options=options)
 
 def chrome():
     try:
